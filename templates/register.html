@@ -1,0 +1,27 @@
+<!-- templates/register.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register | Narayan Dental Care</title>
+</head>
+<body>
+    <h2>Register New User</h2>
+    <form method="POST">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+
+        <label>Role:</label><br>
+        <select name="role">
+            <option value="admin">Admin</option>
+            <option value="doctor">Doctor</option>
+            <option value="receptionist">Receptionist</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <p><a href="/login">Back to Login</a></p>
+</body>
+</html>
